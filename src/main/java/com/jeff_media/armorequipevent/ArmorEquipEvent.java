@@ -32,7 +32,7 @@ public final class ArmorEquipEvent extends PlayerEvent implements Cancellable {
 	private ItemStack oldArmorPiece, newArmorPiece;
 
 	/**
-	 * Registers the listeners for this event. If you forget to call this method, then the event will never get caled.
+	 * Registers the listeners for this event. If you forget to call this method, then the event will never get called.
 	 * @param plugin Plugin to call this event from
 	 */
 	public static void registerListener(JavaPlugin plugin) {
@@ -166,23 +166,23 @@ public final class ArmorEquipEvent extends PlayerEvent implements Cancellable {
 	 */
 	public enum EquipMethod{// These have got to be the worst documentations ever.
 		/**
-		 * When you shift click an armor piece to equip or unequip
+		 * When you shift click an armor piece to equip or unequip it.
 		 */
 		SHIFT_CLICK,
 		/**
-		 * When you drag and drop the item to equip or unequip
+		 * When you drag and drop the item to equip or unequip it.
 		 */
 		DRAG,
 		/**
-		 * When you manually equip or unequip the item. Use to be DRAG
+		 * When you manually equip or unequip the item. Use to be DRAG.
 		 */
 		PICK_DROP,
 		/**
-		 * When you right click an armor piece in the hotbar without the inventory open to equip.
+		 * When you right click an armor piece in the hotbar without the inventory open to equip it.
 		 */
 		HOTBAR,
 		/**
-		 * When you press the hotbar slot number while hovering over the armor slot to equip or unequip
+		 * When you press the hotbar slot number while hovering over the armor slot to equip or unequip it.
 		 */
 		HOTBAR_SWAP,
 		/**
@@ -195,7 +195,7 @@ public final class ArmorEquipEvent extends PlayerEvent implements Cancellable {
 		 */
 		BROKE,
 		/**
-		 * When you die causing all armor to unequip
+		 * When you die, causing all armor to be unequiped.
 		 */
 		DEATH,
 	}
